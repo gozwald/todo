@@ -1,0 +1,139 @@
+.App {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.todocontainer {
+  border-radius: 35px;
+  background: #341671;
+  padding: 30px;
+  margin: 2vh;
+  width: 90%;
+  height: 90vh;
+  overflow: auto;
+}
+
+.formtop {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+::placeholder {
+  color: rgb(224, 209, 209);
+}
+
+#edit {
+  border-radius: 50%;
+  outline: none;
+  border: none;
+  padding: 0.5em 1em;
+  text-decoration: none;
+  background: #f54952;
+  color: #fff;
+  border-bottom: solid 4px #627295;
+}
+
+#edit:active {
+  -ms-transform: translateY(4px);
+  -webkit-transform: translateY(4px);
+  transform: translateY(4px);
+  border-bottom: none;
+}
+
+#delete {
+  border-radius: 50%;
+  outline: none;
+  border: none;
+  padding: 0.5em 1em;
+  text-decoration: none;
+  background: #a0b817;
+  color: #fff;
+  border-bottom: solid 4px #627295;
+}
+
+#delete:active {
+  -ms-transform: translateY(4px);
+  -webkit-transform: translateY(4px);
+  transform: translateY(4px);
+  border-bottom: none;
+}
+
+.formtop input[type="text"] {
+  width: 70%;
+  border: none;
+  outline: none;
+  border-radius: 30px;
+  background: #a52c5a;
+  padding: 15px;
+  color: rgb(247, 247, 247);
+  /* border: 2px solid black; */
+}
+
+.formtop input[type="button"],
+input[type="submit"] {
+  display: inline-block;
+  padding: 6px 25px;
+  font-size: 20px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #1d6baa;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px rgba(172, 160, 160, 0.767);
+}
+
+.formtop input[type="button"],
+input[type="submit"]:hover {
+  background-color: #406da7;
+}
+
+.formtop input[type="button"],
+input[type="submit"]:active {
+  background-color: #406da7;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.error {
+  display: block;
+  font-family: sans-serif;
+  text-align: center;
+  color: rgb(250, 250, 250);
+}
+
+.todoShell {
+  display: flex;
+  height: 7vh;
+  justify-content: center;
+}
+
+.todo {
+  align-self: center;
+  width: 70%;
+}
+
+.todo input[name="nonedit"] {
+  width: 80%;
+  height: 90%;
+  border: none;
+  outline: none;
+  border-radius: 30px;
+  background: #a13f84;
+  padding: 10px 10px;
+  color: white;
+  /* border: 2px solid black; */
+}
+
+.todo input[name="edit"] {
+  width: 80%;
+  outline: none;
+  border-radius: 30px;
+  background: #c0a56a;
+  padding: 10px 10px;
+  color: white;
+  border: 2px solid rgb(190, 103, 103);
+}
